@@ -28,26 +28,102 @@ public class oleSereni1 extends javax.swing.JFrame {
     private void initComponents() {
 
         insertTime = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        theDate = new javax.swing.JLabel();
+        theDate1 = new javax.swing.JLabel();
+        theDate2 = new javax.swing.JLabel();
+        theDate3 = new javax.swing.JLabel();
+        theDate4 = new javax.swing.JLabel();
+        theDate5 = new javax.swing.JLabel();
+        theDate6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         insertTime.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jTextField1.setText("jTextField1");
+
+        theDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate.setText("DD:");
+
+        theDate1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate1.setText("DD:");
+
+        theDate2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate2.setText("DD:");
+
+        theDate3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate3.setText("DD:");
+
+        theDate4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate4.setText("DD:");
+
+        theDate5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate5.setText(" MM:");
+
+        theDate6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        theDate6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        theDate6.setText("YY:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(199, 199, 199)
-                .addComponent(insertTime, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addGap(145, 145, 145)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(theDate4)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(theDate3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(theDate2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(insertTime, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(theDate)
+                        .addGap(74, 74, 74)
+                        .addComponent(theDate5)
+                        .addGap(60, 60, 60)
+                        .addComponent(theDate6))
+                    .addComponent(theDate1))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addComponent(insertTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(326, Short.MAX_VALUE))
+                .addGap(79, 79, 79)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(theDate, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(theDate5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(theDate6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(theDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(theDate2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(theDate3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(7, 7, 7)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(theDate4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(169, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(insertTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))))
         );
 
         pack();
@@ -90,5 +166,13 @@ public class oleSereni1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField insertTime;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel theDate;
+    private javax.swing.JLabel theDate1;
+    private javax.swing.JLabel theDate2;
+    private javax.swing.JLabel theDate3;
+    private javax.swing.JLabel theDate4;
+    private javax.swing.JLabel theDate5;
+    private javax.swing.JLabel theDate6;
     // End of variables declaration//GEN-END:variables
 }
